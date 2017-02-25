@@ -35,7 +35,7 @@ public class HibernateConfiguration {
 		return sessionFactory;
 	}
 
-	@Bean
+	@Bean(name = "dataSource")
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName(environment

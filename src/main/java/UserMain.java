@@ -32,16 +32,16 @@ public class UserMain {
 			System.out.println(user.getFirstName());
 		}
 		
-		User user = userService.findById(2);
-		user.setFirstName("Yash");
-		user.setLastName("Pawar");
-		user.setEmail("mmishra@googlemail.com");
-		user.setUserName("chik");
-		user.setPassword("kitkat1");
-		user.setPhoneNumber("111111111");
-		user.setAddress("CA");
-		
-		userService.updateUser(user);
+//		User user = userService.findById(2);
+//		user.setFirstName("Yash");
+//		user.setLastName("Pawar");
+//		user.setEmail("mmishra@googlemail.com");
+//		user.setUserName("chik");
+//		user.setPassword("kitkat1");
+//		user.setPhoneNumber("111111111");
+//		user.setAddress("CA");
+//		
+//		userService.updateUser(user);
 
 		context.close();
 	}

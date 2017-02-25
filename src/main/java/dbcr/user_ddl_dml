@@ -1,0 +1,14 @@
+drop table user_roles;
+
+CREATE TABLE USER_ROLES (
+  user_role_id int(11) NOT NULL AUTO_INCREMENT,
+  user_name varchar(45) NOT NULL,
+  role varchar(45) NOT NULL,
+  user_name_id int(45),
+  PRIMARY KEY (user_role_id),
+  UNIQUE KEY uni_username_role (role,user_name));
+  
+  
+INSERT INTO user_roles (user_name, role) VALUES ('vikrant', 'ROLE_USER');
+INSERT INTO user_roles (user_name, role) VALUES ('yash', 'ROLE_ADMIN');
+INSERT INTO user_roles (user_name, role) VALUES ('amol', 'ROLE_USER');
